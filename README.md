@@ -2,16 +2,16 @@
 with [MODERN-JAVASCRIPT-TUTORIAL: Part 1](https://ko.javascript.info/js)
 
 - 소개
-  - [ ] [자바스크립트란?](/intro)
-  - [ ] [매뉴얼과 명세서](/manuals-specifications)
-  - [ ] [코드 에디터](/code-editors)
-  - [ ] [개발자 콘솔](/devtools)
+  - [x] [자바스크립트란?](/intro)
+  - [x] [매뉴얼과 명세서](/manuals-specifications)
+  - [x] [코드 에디터](/code-editors)
+  - [x] [개발자 콘솔](/devtools)
 - 자바스크립트 기본
-  - [ ] [Hello, world!](/hello-world)
-  - [ ] [코드 구조](/structure)
-  - [ ] [엄격 모드](/strict-mode)
-  - [ ] [변수와 상수](/variables)
-  - [ ] [자료형](/types)
+  - [x] [Hello, world!](/hello-world)
+  - [x] [코드 구조](/structure)
+  - [x] [엄격 모드](/strict-mode)
+  - [x] [변수와 상수](/variables)
+  - [x] [자료형](/types) 2025-05-25
   - [ ] [alert, prompt, confirm을 이용한 상호작용](/alert-prompt-confirm)
   - [ ] [형 변환](/type-conversions)
   - [ ] [기본 연산자와 수학](/operators)
