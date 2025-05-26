@@ -11,8 +11,8 @@ with [MODERN-JAVASCRIPT-TUTORIAL: Part 1](https://ko.javascript.info/js)
   - [x] [코드 구조](/structure)
   - [x] [엄격 모드](/strict-mode)
   - [x] [변수와 상수](/variables)
-  - [x] [자료형](/types) 2025-05-25
-  - [ ] [alert, prompt, confirm을 이용한 상호작용](/alert-prompt-confirm)
+  - [x] [자료형](/types) 
+  - [x] [alert, prompt, confirm을 이용한 상호작용](/alert-prompt-confirm) 2025-05-25
   - [ ] [형 변환](/type-conversions)
   - [ ] [기본 연산자와 수학](/operators)
   - [ ] [비교 연산자](/comparison)
@@ -106,4 +106,4 @@ with [MODERN-JAVASCRIPT-TUTORIAL: Part 1](https://ko.javascript.info/js)
   - [ ] [Eval: 문자열 코드 실행하기](/eval)
   - [ ] [커링](/currying-partials)
   - [ ] [참조 타입](/reference-type)
-  - [ ] [BigInt](/bigin
+  - [ ] [BigInt](/bigint)
