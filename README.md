@@ -20,11 +20,11 @@ with [MODERN-JAVASCRIPT-TUTORIAL: Part 1](https://ko.javascript.info/js)
   - [x] [논리 연산자](/logical-operators)
   - [x] [nullish 병합 연산자 '??'](/nullish-coalescing-operator)
   - [x] [while과 for 반복문](/while-for)
-  - [ ] [switch문](/switch)
-  - [ ] [함수](/function-basics)
-  - [ ] [함수 표현식](/function-expressions)
-  - [ ] [화살표 함수 기본](/arrow-functions-basics)
-  - [ ] [기본 문법 요약](/javascript-specials)
+  - [x] [switch문](/switch)
+  - [x] [함수](/function-basics) 2025-05-26
+  - [x] [함수 표현식](/function-expressions)
+  - [x] [화살표 함수 기본](/arrow-functions-basics)
+  - [x] [기본 문법 요약](/javascript-specials) 2025-05-27
 - 코드 품질
   - [ ] [Chrome으로 디버깅하기](/debugging-chrome)
   - [ ] [코딩 스타일](/coding-style)

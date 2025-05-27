@@ -746,14 +746,132 @@ switch (arg) {
 //   return (age > 18) || confirm("보호자의 동의를 받으셨나요?");
 // }
 
-function min(a, b) {
-  return (a < b) ? a : b;
+/* 함수 표현식 */
+
+// function sayHi() {
+//   alert("Hello");
+// }
+
+// let sayHi = function () { alert("Hello"); };
+
+// let func = sayHi;
+
+/* 콜백 함수 */
+
+/*
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
 }
 
-function pow(x, n) {
- return n > 1 ? alert(x ** n) : alert("지수는 1보다 커야 합니다.");
+function showOk() {
+  alert("동의하셨습니다.");
 }
 
-let x = prompt("밑수를 입력해주세요.", 2);
-let n = prompt("지수를 입력해주세요.", 3);
-pow(x, n);
+function showCancel() {
+  alert("취소 버튼을 누르셨습니다.");
+}
+
+// 사용법: 함수 showOk와 showCancel가  함수의 인수로 전달됨.
+ask("동의하십니까?", showOk, showCancel);
+// 함수를 함수의 인수로 전달하고, 필요하다면 인수로 전달한 그 함수를 "나중에 호출(called back)"하는 것이 콜백 함수의 개념입니다. 
+// 위 예시에선 사용자가 "yes"라고 대답한 경우 showOk가 콜백이 되고, "no"라고 대답한 경우 showCancel가 콜백이 됩니다.
+
+
+
+ask(
+  "동의하십니까?",
+  function() { alert("동의하셨습니다."); },
+  function() { alert("취소 버튼을 누르셨습니다."); }
+);
+// ask(...) 안에 함수가 선언된 게 보이시나요? 이렇게 이름 없이 선언한 함수는 익명 함수(anonymous function) 라고 부릅니다. 익명 함수는 (변수에 할당된 게 아니기 때문에) ask 바깥에선 접근할 수 없습니다. 위 예시는 의도를 가지고 이렇게 구현하였기 때문에 바깥에서 접근할 수 없어도 문제가 없습니다.
+
+*/
+
+
+/* 함수 표현식 vs 함수 선언문 */
+
+/*
+// 자바스크립트 엔진이 함수를 생성하는 시점이 다름
+
+// 함수 선언문: 
+// 함수 선언문은 함수 선언문이 정의되기 전에도 호출할 수 있습니다.
+// 전역 함수 선언문은 스크립트 어디에 있느냐에 상관없이 어디에서든 사용할 수 있습니다.
+// 자바스크립트는 스크립트를 실행하기 전, 준비단계에서 전역에 선언된 함수 선언문을 찾고, 해당 함수를 생성합니다. 
+function sum(a, b) {
+  return a + b;
+}
+
+// 함수 표현식: 실제 실행 흐름이 해당 함수에 도달했을 때 함수를 생성합니다.
+let sum  = function(a, b) {
+  return a + b;
+};
+*/
+
+/*
+// 엄격 모드에서 함수 선언문이 코드 블록 내에 위치하면 해당 함수는 블록 내 어디서든 접근할 수 있습니다. 하지만 블록 밖에서는 함수에 접근하지 못합니다.
+let age = prompt("나이를 입력해주세요.", 18);
+
+// 조건에 따라 함수를 선언함
+if (age < 18)  {
+  welcome();
+
+  function welcome() {
+    alert("환영합니다!");
+  }
+
+  welcome();
+
+} else {
+  function welcome() {
+    alert("안녕하세요!");
+  }
+}
+// 함수를 나중에 호출합니다.
+// 함수 선언문은 함수가 선언된 코드 블록 안에서만 유효하기 때문에 에러가 발생합니다.
+welcome(); // Error: welcome is not defined
+*/
+
+/*
+let age = prompt("나이를 입력해주세요.", 18);
+
+let welcome;
+
+if (age < 18) {
+  welcome = function() {
+    alert("환영합니다!");
+  };
+
+  welcome();
+} else {
+  welcome = function() {
+    alert("안녕하세요!");
+  };
+}
+
+welcome(); // 제대로 동작합니다.
+*/
+/*
+let age = prompt("나이를 입력해주세요.", 18);
+let welcome = (age < 18) 
+  ?   function() { alert("환영합니다!");}
+  :   function() { alert("안녕하세요!"); };
+
+welcome(); // 제대로 동작합니다.
+
+*/
+
+/* 화살표 함수 */
+
+/*
+function ask(question, yes, no) {
+  confirm(question) ? yes() : no();
+}
+
+ask(
+  "동의하십니까?",
+  () => alert("동의하셨습니다."),
+  () => alert("취소 버튼을 누르셨습니다.")
+);
+*/
+
