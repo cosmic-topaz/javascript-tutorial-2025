@@ -26,15 +26,15 @@ with [MODERN-JAVASCRIPT-TUTORIAL: Part 1](https://ko.javascript.info/js)
   - [x] [화살표 함수 기본](/arrow-functions-basics)
   - [x] [기본 문법 요약](/javascript-specials) 2025-05-27
 - 코드 품질
-  - [ ] [Chrome으로 디버깅하기](/debugging-chrome)
-  - [ ] [코딩 스타일](/coding-style)
-  - [ ] [주석](/comments)
-  - [ ] [닌자 코드](/ninja-code)
+  - [x] [Chrome으로 디버깅하기](/debugging-chrome)
+  - [x] [코딩 스타일](/coding-style)
+  - [x] [주석](/comments)
+  - [x] [닌자 코드](/ninja-code)
   - [ ] [테스트 자동화와 Mocha](/testing-mocha)
   - [ ] [폴리필](/polyfills)
 - 객체: 기본
-  - [ ] [객체](/object)
-  - [ ] [참조에 의한 객체 복사](/object-copy)
+  - [x] [객체](/object)
+  - [x] [참조에 의한 객체 복사](/object-copy) 2025-06-04
   - [ ] [가비지 컬렉션](/garbage-collection)
   - [ ] [메서드와 this](/object-methods)
   - [ ] [new 연산자와 생성자 함수](/constructor-new)
